@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(180deg, #cccdcf 20%,  #585a5c);
 
 }
 
@@ -49,6 +50,24 @@ nav a:hover{
     color: #ffffff;
     background-color: #334155;
     cursor: pointer;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5%;
+}
+
+#bemutat img{
+    width: 15%;
+    border-radius: 10%;
+}
+
+#bemutatszoveg{
+    background-color: #35383b;
+    color: #dee2e7;
 }
 
 
