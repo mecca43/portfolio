@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background: linear-gradient(180deg, #0d0f13 -30%, #1f252e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;    
+}
+
+header h1{
+    margin-bottom: 2px;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+header h2{
+    margin-top: 10px;
+    color: #94a3b8;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+nav{
+    background-color:#35383b;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid black;
+}
+
+nav a{
+    color: #dee2e7;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #334155;
+    cursor: pointer;
+}
+
+
+
+
+
