@@ -60,14 +60,26 @@ main h2{
     letter-spacing: 5%;
 }
 
+#bemutat{
+    display: flex;
+}
+
 #bemutat img{
-    width: 15%;
-    border-radius: 10%;
+    border-radius: 50px;
+    width: 12%;
+    height: auto;
+    margin: 20px 30px 20px 50px;
+    box-shadow: 0px 0px 70px 15px black;
 }
 
 #bemutatszoveg{
     background-color: #35383b;
-    color: #dee2e7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    width: 70%;
+    height: auto;
+    color: white;
 }
 
 
