@@ -62,11 +62,12 @@ main h2{
 
 #bemutat{
     display: flex;
+
 }
 
 #bemutat img{
     border-radius: 50px;
-    width: 12%;
+    width: 20%;
     height: auto;
     margin: 20px 30px 20px 50px;
     box-shadow: 0px 0px 70px 15px black;
@@ -75,12 +76,110 @@ main h2{
 #bemutatszoveg{
     background-color: #35383b;
     padding: 20px;
-    margin: 20px;
     border-radius: 50px;
-    width: 70%;
+    width: 65%;
     height: auto;
-    color: white;
+    color: #dee2e7;
+    font-size: 3.6rem;
 }
+
+#keszseg{
+    display: flex;
+    justify-content: center;
+}
+
+#kesz1, #kesz2{
+    background-color: #35383b;
+    margin: 30px;
+    padding: 70px;
+    border-radius: 30px;
+    color: #dee2e7;
+    font-size: 2.4rem;
+}
+
+#kesz1 li, #kesz2 li{
+    margin-top: 20px;
+}
+
+#projektek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#projektek p{
+    font-size: 2rem;
+}
+
+#projekt1, #projekt2, #projekt3{
+    background-color: #35383b;
+    padding: 20px;
+    width: 40%;
+    border-radius: 50px;
+    height: 600px;
+    font-size: 1.5rem;
+    color: #dee2e7;
+}
+
+#projekt1:hover, #projekt2:hover, #projekt3:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+    box-shadow: 0px 0px 70px 15px black;
+}
+
+#projektek img:hover{
+    border-radius: 0;
+}
+
+#projektek img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#kapcsolat{
+    display: flex;
+    justify-content: center;
+}
+
+#kapcsolat table{
+    padding: 30px;
+    margin-bottom: 50px;
+    font-size: 2.7rem;
+    background-color: #35383b;
+    border-collapse: collapse;
+    color: #dee2e7;
+    
+}
+
+#kapcsolat td, tr{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #35383b;
+    color: #dee2e7;
+    font-size: 1.8rem;
+}
+
+footer p{
+    margin: 20px;
+}
+
+@media (max-width: 800px){
+    #bemutat img{width: 20%; height: 30%;}
+    #bemutatszoveg{font-size: 1.9rem;}
+    #projektek{flex-direction: column; gap: 50px;}
+    #projekt1, #projekt2, #projekt3{width: 70%;}
+    nav{flex-direction: column; text-align: center; position:relative; }
+}
+
+
+
 
 
 
