@@ -5,6 +5,12 @@ body{
 
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 header{
     background: linear-gradient(180deg, #0d0f13 -30%, #1f252e);
     display: flex;
@@ -67,7 +73,8 @@ main h2{
 
 #bemutat img{
     border-radius: 50px;
-    width: 20%;
+    width: 25%;
+    max-width: 350px;
     height: auto;
     margin: 20px 30px 20px 50px;
     box-shadow: 0px 0px 70px 15px black;
@@ -77,10 +84,10 @@ main h2{
     background-color: #35383b;
     padding: 20px;
     border-radius: 50px;
-    width: 65%;
+    width: 55%;
     height: auto;
     color: #dee2e7;
-    font-size: 3.6rem;
+    font-size: 3rem;
 }
 
 #keszseg{
@@ -94,7 +101,7 @@ main h2{
     padding: 70px;
     border-radius: 30px;
     color: #dee2e7;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 #kesz1 li, #kesz2 li{
@@ -110,17 +117,21 @@ main h2{
 }
 
 #projektek p{
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+#projektek h2{
+    font-size: 2.3rem;
 }
 
 #projekt1, #projekt2, #projekt3{
     background-color: #35383b;
     padding: 20px;
-    width: 40%;
+    width: 25%;
     border-radius: 50px;
-    height: 600px;
-    font-size: 1.5rem;
-    color: #dee2e7;
+    height: 500px;
+    color: #dee2e7
 }
 
 #projekt1:hover, #projekt2:hover, #projekt3:hover{
@@ -135,6 +146,8 @@ main h2{
 
 #projektek img{
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -146,7 +159,7 @@ main h2{
 #kapcsolat table{
     padding: 30px;
     margin-bottom: 50px;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     background-color: #35383b;
     border-collapse: collapse;
     color: #dee2e7;
@@ -172,10 +185,12 @@ footer p{
 
 @media (max-width: 800px){
     #bemutat img{width: 20%; height: 30%;}
-    #bemutatszoveg{font-size: 1.9rem;}
+    #bemutatszoveg{font-size: 1.9rem; width: 60%;}
     #projektek{flex-direction: column; gap: 50px;}
     #projekt1, #projekt2, #projekt3{width: 70%;}
     nav{flex-direction: column; text-align: center; position:relative; }
+    #kesz1, #kesz2{ padding: 50px;}
+    #kapcsolat table{font-size: 2rem;}
 }
 
 
