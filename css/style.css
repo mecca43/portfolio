@@ -8,7 +8,6 @@ body{
 img{
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 header{
@@ -68,7 +67,6 @@ main h2{
 
 #bemutat{
     display: flex;
-
 }
 
 #bemutat img{
@@ -111,7 +109,6 @@ main h2{
 #projektek{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
     padding: 20px;
 }
@@ -137,7 +134,7 @@ main h2{
 #projekt1:hover, #projekt2:hover, #projekt3:hover{
     transform: translateY(-10px);
     transition: 0.4s;
-    box-shadow: 0px 0px 70px 15px black;
+    box-shadow: 0px 20px 70px 15px black;
 }
 
 #projektek img:hover{
@@ -147,7 +144,6 @@ main h2{
 #projektek img{
     width: 100%;
     height: auto;
-    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -184,13 +180,27 @@ footer p{
 }
 
 @media (max-width: 800px){
-    #bemutat img{width: 20%; height: 30%;}
-    #bemutatszoveg{font-size: 1.9rem; width: 60%;}
+    #bemutat img{width: 25%; height: 30%;}
+    #bemutatszoveg{font-size: 1.8rem; width: 55%;}
     #projektek{flex-direction: column; gap: 50px;}
     #projekt1, #projekt2, #projekt3{width: 70%;}
     nav{flex-direction: column; text-align: center; position:relative; }
     #kesz1, #kesz2{ padding: 50px;}
     #kapcsolat table{font-size: 2rem;}
+}
+
+@media (max-width: 660px){
+    #kesz1, #kesz2{width: 20%; font-size: 1.5rem;}
+    #kapcsolat table{font-size: 1.5rem;}
+    #bemutatszoveg{width: 50%; font-size: 1.5rem;}
+    #bemutat img{height: 50%; margin: 20px 30px 20px 30px;}
+}
+
+@media (max-width: 450px){
+    #kesz1, #kesz2{width: 17%; font-size: 1rem; padding: 40px; margin: 5px 20px 5px 5px;}
+    #kapcsolat table{font-size: 1rem;}
+    #bemutatszoveg{width: 40%; font-size: 1.2rem;}
+    footer p{font-size: 1rem;}
 }
 
 
