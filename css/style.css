@@ -1,8 +1,13 @@
 body{
-    margin: 0;
+    margin: auto;
     padding: 0;
-    background: linear-gradient(180deg, #cccdcf 20%,  #585a5c);
+    font-family: "Roboto", sans-serif;
+}
 
+#container{
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(180deg, #cccdcf 40%,  #585a5c);
 }
 
 img{
@@ -11,7 +16,7 @@ img{
 }
 
 header{
-    background: linear-gradient(180deg, #0d0f13 -30%, #1f252e);
+    background: linear-gradient(180deg, #0d0f13 , #1f252e);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +105,7 @@ main h2{
     border-radius: 30px;
     color: #dee2e7;
     font-size: 2rem;
+    width: 20%;
 }
 
 #kesz1 li, #kesz2 li{
@@ -109,12 +115,13 @@ main h2{
 #projektek{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 20px;
 }
 
 #projektek p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -180,8 +187,9 @@ footer p{
 }
 
 @media (max-width: 800px){
-    #bemutat img{width: 25%; height: 30%;}
-    #bemutatszoveg{font-size: 1.8rem; width: 55%;}
+    #bemutat{flex-direction: column;}
+    #bemutat img{width: 35%; height: 35%;}
+    #bemutatszoveg{font-size: 1.8rem; width: 80%; margin-left: 30px;}
     #projektek{flex-direction: column; gap: 50px;}
     #projekt1, #projekt2, #projekt3{width: 70%;}
     nav{flex-direction: column; text-align: center; position:relative; }
@@ -191,15 +199,15 @@ footer p{
 
 @media (max-width: 660px){
     #kesz1, #kesz2{width: 20%; font-size: 1.5rem;}
-    #kapcsolat table{font-size: 1.5rem;}
-    #bemutatszoveg{width: 50%; font-size: 1.5rem;}
+    #kapcsolat table{font-size: 1.2rem;}
+    #bemutatszoveg{width: 80%; font-size: 1.5rem;}
     #bemutat img{height: 50%; margin: 20px 30px 20px 30px;}
 }
 
 @media (max-width: 450px){
-    #kesz1, #kesz2{width: 17%; font-size: 1rem; padding: 40px; margin: 5px 20px 5px 5px;}
-    #kapcsolat table{font-size: 1rem;}
-    #bemutatszoveg{width: 40%; font-size: 1.2rem;}
+    #kesz1, #kesz2{width: 17%; font-size: 1rem; padding: 40px; margin: 5px 20px 5px 20px;}
+    #kapcsolat table{font-size: 0.9rem;}
+    #bemutatszoveg{width: 70%; font-size: 1.2rem;}
     footer p{font-size: 1rem;}
 }
 
